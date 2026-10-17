@@ -1,0 +1,51 @@
+AXI4-Lite Register Functional Coverage
+========================================
+Coverage bins hit: 31/31
+Coverage percentage: 100.0%
+Note: user-defined transaction coverage; not RTL code or toggle coverage.
+
+Register reads:
+  CONTROL      0x00: HIT
+  STATUS       0x04: HIT
+  SRC_ADDR     0x08: HIT
+  DST_ADDR     0x0C: HIT
+  LENGTH       0x10: HIT
+  WORDS_DONE   0x14: HIT
+  IRQ_ENABLE   0x18: HIT
+  IRQ_STATUS   0x1C: HIT
+  ERROR_CODE   0x20: HIT
+
+Software-writable registers:
+  CONTROL      0x00: HIT
+  SRC_ADDR     0x08: HIT
+  DST_ADDR     0x0C: HIT
+  LENGTH       0x10: HIT
+  IRQ_ENABLE   0x18: HIT
+  IRQ_STATUS   0x1C: HIT
+
+Byte strobes:
+  0x0: HIT
+  0x1: HIT
+  0x2: HIT
+  0x3: HIT
+  0x4: HIT
+  0x8: HIT
+  0xC: HIT
+  0xF: HIT
+
+AXI responses:
+  OKAY: HIT
+  SLVERR: HIT
+
+Scenarios:
+  independent_aw_w: HIT
+  interrupts: HIT
+  invalid_address: HIT
+  read_backpressure: HIT
+  reset: HIT
+  write_backpressure: HIT
+
+Sample counts:
+  register_reads: 181
+  register_writes: 113
+  responses: 294

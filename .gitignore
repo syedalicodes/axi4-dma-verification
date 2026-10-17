@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+sim_build/
+results.xml
+dump.vcd
+*.fst
+formal/axi4_lite_regs/

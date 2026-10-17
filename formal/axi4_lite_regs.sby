@@ -1,0 +1,14 @@
+[options]
+mode prove
+depth 10
+
+[engines]
+smtbmc z3
+
+[script]
+read -formal -sv -D FORMAL axi4_lite_regs.sv axi4_lite_regs_formal.sv
+prep -top axi4_lite_regs_formal
+
+[files]
+rtl/axi4_lite_regs.sv
+formal/axi4_lite_regs_formal.sv
